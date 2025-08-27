@@ -6,12 +6,12 @@ from collections import defaultdict
 import time
 
 # ---------- Config ----------
-VIDEO_SOURCE = "intersection.mp4"         # or 0 for webcam
+VIDEO_SOURCE = "intersection.mp4" # or 0 for webcam
 MODEL_PATH   = "yolov8m.pt"  # or "yolov8n.pt" for zero-shot
 CONF_THRESH  = 0.15
 IOU_THRESH   = 0.45
 IMG_SIZE     = 640
-TRACKER_CFG  = "botsort.yaml"           # built-in tracker config from Ultralytics
+TRACKER_CFG  = "botsort.yaml"  # built-in tracker config from Ultralytics
 ALLOWED_LABELS = {
     "car", "truck", "bus", "motorcycle", "automobile", "van", "pickup", "vehicle", "suv", "minivan", "jeep"
 }
@@ -148,3 +148,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Install required packages
+# !pip install ultralytics opencv-python numpy
